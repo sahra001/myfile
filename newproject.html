@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Afghan Products</title>
+    <style>
+        body {
+            background: #f9d9f9;
+
+        }
+
+        .texts {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(171.8deg, rgb(238, 156, 167) 13.8%, rgb(246, 204, 162) 82.6%);
+            border-radius: 30px;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-weight: 100;
+        }
+
+        h2 {
+            text-align: center;
+            color: purple;
+        }
+
+        em {
+            font-size: 18px;
+            margin: 10px auto;
+            color: white;
+
+        }
+
+        .a {
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        .red {
+            color: purple;
+        }
+
+        .purple {
+            color: purple;
+        }
+
+        .image {
+            max-width: 200px;
+            max-height: 130px;
+            padding: 8px;
+            border-radius: 30px;
+            padding-left: 0;
+            float: left;
+
+
+        }
+
+        .p {
+            font-size: 20px;
+            padding-top: 0%;
+            margin: 10px;
+            margin-left: 20px;
+            color: purple;
+            text-align: center;
+            line-height: 25px;
+
+        }
+
+        button {
+            text-align: center;
+            font-size: 20px;
+            padding: 7px;
+            border-radius: 35px;
+            color: purple;
+            background-color: #f9d9f9;
+            border: 1px solid;
+            border-color: transparent;
+            font-family: cursive;
+            transition: all 200ms ease;
+            box-shadow: rgba(33, 33, 41, 0.301) 0px 8px 8px 0;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: purple;
+            color: #f9d9f9;
+            border: 1px solid #f9d9f9;
+
+        }
+
+        .cr {
+            text-align: center;
+            font-size: 16px;
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="texts">
+        <h1><strong>W</strong>elcome to Afghan shop</h1>
+        <h2>Here you can find all type of Afghan products 🤩</h2>
+        <hr>
+        <p class="a">Traditional exports are dried fruits, Tropical fruits, nuts, carpets, wool, and karakul pelts,
+            Grapes, Honey.
+        </p>
+
+        <p><em> Dried <span class="red">fruits</span> </em></p>
+        <br>
+        <img class="image"
+            src="https://www.khaama.com/wp-content/uploads/2019/06/Afghan-agricultural-exhibition-Mumbai-city-880x660.jpg"
+            alt="Afghani dried fruits">
+
+        <p class="p"><strong>The</strong> selection of Afghan dried fruits includes fruits such as raisins, apricots,
+            figs,
+            cherries,
+            prunes, dates, and
+            mulberries. In the country, the process of drying fruits is a family business that has been passed
+            down from one
+            generation to another for many years. People typically dry their fruit in an entirely natural way
+            either in the sun or,
+            as it is the case with certain varieties of grapes, in unique 'raisin rooms' known as khasmish
+            khana.</p>
+        <br />
+        <p><em>Carpets</em></p>
+        <br />
+        <img class="image" src="https://g7t9m5v9.stackpathcdn.com/wp-content/uploads/2021/11/Afghan-Carpet.jpg"
+            alt="Afghani carpets">
+        <p class="p"><strong>Afghan </strong>rugs are made of three elements: Warp (Base), Pile (Surface), and Dyes.
+            First of all, let
+            us
+            start by explaining
+            each of these elements. Afghan rugs can be categorized based on carpet pattern, weaving technic, and
+            material. At the highest level, we have
+            handmade rugs & carpets and handmade flatweave kilims. Then we have modern rugs and traditional
+            tribal rugs and finally,
+            we have categorizations based on design.</p>
+        <br />
+        <p><em>Afghani <span class="purple">Saffron </span></em></p>
+        <br>
+        <img class="image"
+            src="https://www.specialtyfood.com/media/CACHE/images/multi_image_uploader/source/80/33/80332170b7bb3dc9856f5083fc574394/smaller_2_gram.JPG"
+            alt="Afghani Saffron">
+        <p class="p"><strong> Saffron</strong> comes from the Crocus Sati flower, an autumnal flowering plant. During 1
+            month,
+            the bulbs
+            blossom and it is the
+            time of the meticulous harvesting of the stigmas, entirely by hand, taking the greatest care not to
+            crush or break them. saffron is harvested in the lands of Afghanistan, which offer a unique blend of
+            earth, water and sun. The rich and
+            fertile soil, the purity and minerality of the water, a dry climate and abundant sunshine make it
+            possible to produce
+            one of the best saffrons in the world. <a href="https://oec.world/en/profile/country/afg" target="_blank">
+                Learn more 🔎
+            </a></p>
+
+        <button> Order here 📌</button>
+        <p class="cr">This page is made by Sahra Sarwari 🥰</p>
+    </div>
+    <script>
+        function country() {
+            let name = prompt("What is your name?");
+            let ints = prompt("Are you intrested in Afghani product?")
+            if (ints === "yes") {
+                alert("Continue");
+                let h1 = document.querySelector("h1")
+                h1.innerHTML = "Welcome " + name + "😍";
+
+            } else {
+                let h1 = document.querySelector("h1")
+                h1.innerHTML = "Sorry " + name + " you can't continue 🙁";
+
+
+            }
+        }
+        let element = document.querySelector("button");
+        element.addEventListener("click", country);
+
+    </script>
+</body>
+
+</html>
